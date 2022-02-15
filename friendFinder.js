@@ -1,9 +1,8 @@
-// console.log(findFriend("Poorna Athreya"))
+// console.log(findFriend("Jung Hoseok"))
 function findFriend(userName) {
             if(typeof userName != 'string') return 'Invalid input, please enter a user name!';
 
-    const   fileSyncObject = require('fs');
-    const   userDetails = JSON.parse(fileSyncObject.readFileSync('userDetails.json'));
+    const   userDetails = require('./userDetails.json');
     let     userFriends, flag = 0;
             userDetails.forEach(user => {
                 if(user.name == userName) {

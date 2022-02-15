@@ -1,6 +1,4 @@
-// FriendFinder function
-// const { exportAllDeclaration } = require('babel-types');
-// const { describe } = require('yargs');
+// FriendFinder functions
 const friendFinder = require('../friendFinder');
 
 // Succes cases:
